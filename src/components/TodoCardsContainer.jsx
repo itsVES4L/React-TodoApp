@@ -7,7 +7,7 @@ import AddTaskForm from "./AddTaskForm";
 import { useSelector } from "react-redux";
 import EditTask from "./EditTask";
 
-const TodoCardsContainer = ({ view ,display }) => {
+const TodoCardsContainer = ({ view, display }) => {
   //
   const [isAddNewTask, setIsAddNewTask] = useState(false); //it change by click on new task button OR close button
   const [isEditingTask, setIsEditingTask] = useState(false); //it change by click on edit button
@@ -22,14 +22,12 @@ const TodoCardsContainer = ({ view ,display }) => {
   // Tasks array
 
   const tasks = useSelector((state) => state.tasks);
+  localStorage.setItem("tasks", JSON.stringify(tasks));
   let todos = changeTodos(display);
   // the task being edited :
   const [editingTask, setEditingTask] = useState("");
-  //
-  // const index = array.findIndex((item) => item.isEditing === true);
-  useEffect(() => {}, []);
+ 
 
-  
   return (
     <div className="w-screen  relative flex   lg:relative  overflow-hidden items-end flex-col   ">
       <div
@@ -37,10 +35,11 @@ const TodoCardsContainer = ({ view ,display }) => {
       lg:mt-0
       lg:ml-[262px] 
       rounded-t-[30px]
-      lg:rounded-[30px] h-[795px]   
+      lg:rounded-[30px] h-[895px]   
       lg:w-[65%] lg:flex-grow
       lg:mr-[100px]
       lg:h-[80vh]
+      
       relative
       overflow-y-scroll scrollbar-none pl-1  dark:bg-[#18181c] bg-[#efefef]"
       >
@@ -68,7 +67,7 @@ const TodoCardsContainer = ({ view ,display }) => {
                 {" "}
                 " there is no{" "}
                 <span className="font-bold dark:text-[#805cf7] text-[#0f6bae]">
-                 {display === 'all' ? 'task'  : `${display} task`}
+                  {display === "all" ? "task" : `${display} task`}
                 </span>{" "}
                 to Show "{" "}
               </p>

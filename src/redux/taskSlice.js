@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { v4 as uuidv4 } from "uuid";
 import { findIndexById } from "../helper";
-import { json } from "react-router-dom";
+
 
 const taskSlice = createSlice({
   name: "task",
@@ -35,6 +35,7 @@ const taskSlice = createSlice({
         id: uuidv4(),
       };
       state.push(newTask);
+      
     },
     toggleCompleteTask: (state, action) => {
       const { id, isCompleted } = action.payload;

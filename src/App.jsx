@@ -32,7 +32,7 @@ function App() {
   return (
     <div className={`${theme}`}>
       <div
-        className={`font-[lato] t   m-0 dark:bg-[#121215] bg-[#C6CDFF] w-screen h-screen overscroll-none 
+        className={`font-[lato] t   m-0 dark:bg-[#121215] bg-[#C6CDFF] w-screen h-screen overscroll-none overflow-hidden
     transition-all
      delay-300  ease-in `}
       >
