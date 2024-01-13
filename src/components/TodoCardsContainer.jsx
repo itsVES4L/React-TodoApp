@@ -35,7 +35,7 @@ const TodoCardsContainer = ({ view, display }) => {
       lg:mt-0
       lg:ml-[262px] 
       rounded-t-[30px]
-      lg:rounded-[30px] h-[895px]   
+      lg:rounded-[30px] h-screen   
       lg:w-[65%] lg:flex-grow
       lg:mr-[100px]
       lg:h-[80vh]
