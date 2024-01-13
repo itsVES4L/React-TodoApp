@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 500;
+    src: local('lato'), url('/src/assets/fonts/Lato-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('lato'), url('/src/assets/fonts/Lato-Bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 800;
+    src: local('lato'), url('/src/assets/fonts/Lato-Black.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 800;
+    src: local('inter'), url('/src/assets/fonts/Inter-Black.otf') format('opentype');
+}
