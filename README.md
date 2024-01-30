@@ -5,7 +5,7 @@ This is a simple Todo List application built using React and ReduxToolkit. It al
 Live Preview
 You can view a live preview of the app here:
 https://react-todoappvs.vercel.app/
-//
+<br/>
 Installation
 To install the app, follow these steps:
 
