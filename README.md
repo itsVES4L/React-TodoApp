@@ -3,10 +3,11 @@
 This is a simple Todo List application built using React and ReduxToolkit. It allows you to add, remove, and mark todos as complete or incomplete. The app also has light and dark modes and allows you to sort your todos by state (active or completed).
 
 # Live Preview
-You can view a live preview of the app here:
+You can view a live preview of the app here:<br/>
 https://react-todoappvs.vercel.app/
 <br/>
-Installation
+# Installation
+
 To install the app, follow these steps:
 
 Clone the repository using the command git clone https://github.com/itsVES4L/React-TodoApp.git.
