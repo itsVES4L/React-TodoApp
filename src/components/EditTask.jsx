@@ -49,7 +49,7 @@ const EditTask = ({ setIsEditingTask, data }) => {
         </div>
         <div className="w-[80%] flex flex-col gap-3 items-start h-fit">
           <p>tasks:</p>
-          <div className="flex flex-col gap-3 w-full scrollbar-thumb-[#8d8fd2] scrollbar-thin overflow-y-auto md:h-[160px] h-[430px]">
+          <div className="flex flex-col gap-3 w-full scrollbar-thumb-[#8d8fd2] scrollbar-thin overflow-y-auto md:h-[160px] h-[380px]">
             {subTasks.map((item, index) => (
               <div className="flex items-center justify-start gap-2" key={index}>
                 <span className="text-center text-[#8d8fd2] rounded-full"> {index + 1} </span>
@@ -64,10 +64,10 @@ const EditTask = ({ setIsEditingTask, data }) => {
             ))}
           </div>
         </div>
-        <div className="flex w-[50%] md:w-[70%] mr-8 md:px-0 justify-center md:absolute md:right-12 md:bottom-10 md:justify-end gap-4">
+        <div className="flex w-[50%] md:w-[70%]  mr-8 md:px-0 justify-center items-center md:absolute md:right-12 md:bottom-10 md:justify-end gap-4">
           <button
             onClick={handleDoneClick}
-            className="p-1 h-[40px] px-6 mt-4 dark:bg-[#8d8fd2] bg-[#3E9DFF] rounded-md text-white"
+            className="p-1 h-[40px] w-full px-6 mt-4 dark:bg-[#8d8fd2] bg-[#3E9DFF] rounded-md text-white"
           >
             done
           </button>
