@@ -1,4 +1,5 @@
-import findIndexById from "./findIndexById"
-import findIndexByIsEditingValue from "./findIndexByIsEditingValue"
+import findIndexById from "./functions/findIndexById"
+import findIndexByIsEditingValue from "./functions/findIndexByIsEditingValue"
 
-export {findIndexById , findIndexByIsEditingValue }
+
+export { findIndexById , findIndexByIsEditingValue  }

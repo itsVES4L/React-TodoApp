@@ -1,21 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SideMenu from "./components/SideMenu";
 import TasksContainer from "./components/TodoCardsContainer";
 
 function App() {
-  const [theme, setTheme] = useState("dark");
+  // Load theme from localStorage on initial page load
+  const initialTheme = localStorage.getItem("theme") || "dark";
+  const [theme, setTheme] = useState(initialTheme);
+
   const [opened, setOpened] = useState(false);
-
-  //filter the Tasks to show by :
   const [display, setDisplay] = useState("all");
- 
-
-
-  // animation for hamburger menu icon
   const [animationX, setAnimationX] = useState("");
-
-  // view
   const [view, setView] = useState("list");
+
+  useEffect(() => {
+    // Save theme to localStorage whenever it changes
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   const setAnimation = () => {
     if (opened) {
       setOpened(false);
@@ -28,6 +29,9 @@ function App() {
       ]);
     }
   };
+
+
+ 
 
   return (
     <div className={`${theme}`}>
@@ -48,10 +52,10 @@ function App() {
           >
             {" "}
             <div
-              className={`w-8 h-1 transition-all  ease-in dark:bg-[#805CF7]   rounded ${animationX[0]}`}
+              className={`w-8 h-1 transition-all bg-[#0F6BAE]  ease-in dark:bg-[#805CF7]   rounded ${animationX[0]}`}
             ></div>
             <div
-              className={`w-8 h-1 transition-all ease-in  dark:bg-[#805CF7]  rounded ${animationX[1]}`}
+              className={`w-8 h-1 transition-all ease-in  bg-[#0F6BAE]  dark:bg-[#805CF7]  rounded ${animationX[1]}`}
             ></div>
           </div>{" "}
         </div>
@@ -76,7 +80,6 @@ function App() {
             setView={setView}
             setDisplay={setDisplay}
             display={display}
-
           />
         </div>
       </div>

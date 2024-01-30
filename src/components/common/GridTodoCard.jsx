@@ -9,14 +9,16 @@ import {
 import { findIndexByIsEditingValue } from "../../helper";
 import { useSelector } from "react-redux";
 // ICON
-import Arrow from "@mui/icons-material/KeyboardArrowDown";
-import Delete from "@mui/icons-material/DeleteForever";
-import Edit from "@mui/icons-material/DriveFileRenameOutlineRounded";
+
+import {
+  DeleteForever as Delete,
+  DriveFileRenameOutlineRounded as Edit,
+} from "@mui/icons-material";
 const GridTodoCard = ({
   title,
   subTasks,
   id,
-  isCompleted,
+
   setShowEditPage,
   isEditing,
   setData,
