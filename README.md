@@ -14,7 +14,7 @@ Clone the repository using the command git clone https://github.com/itsVES4L/Rea
 Navigate to the project directory using the command cd your-repo.
 Install the dependencies using the command npm install.
 Start the development server using the command npm start.
-Usage
+# Usage
 To use the app, follow these steps:
 
 Open the app in your browser by navigating to http://localhost:3000.
