@@ -49,7 +49,7 @@ const EditTask = ({ setIsEditingTask, data }) => {
         </div>
         <div className="w-[80%] flex flex-col gap-3 items-start h-fit">
           <p>tasks:</p>
-          <div className="flex flex-col gap-3 w-full scrollbar-thumb-[#8d8fd2] scrollbar-thin overflow-y-auto md:h-[160px] h-[380px]">
+          <div className="flex flex-col gap-3 w-full scrollbar-thumb-[#8d8fd2] scrollbar-thin overflow-y-auto md:h-[160px] h-[340px]">
             {subTasks.map((item, index) => (
               <div className="flex items-center justify-start gap-2" key={index}>
                 <span className="text-center text-[#8d8fd2] rounded-full"> {index + 1} </span>
