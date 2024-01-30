@@ -11,6 +11,7 @@ https://react-todoappvs.vercel.app/
 To install the app, follow these steps:
 
 Clone the repository using the command git clone https://github.com/itsVES4L/React-TodoApp.git.
+
 Navigate to the project directory using the command cd your-repo.
 Install the dependencies using the command npm install.
 Start the development server using the command npm start.
